@@ -16,16 +16,13 @@ class Statement extends PDOStatement
 	/**
 	 * Query
 	 * 
-	 * @access private
 	 * @var String
 	 */
 	private $query;
-	
+
 	
 	/**
 	 * Init Statement
-	 * 
-	 * @access protected
 	 */
 	protected function __construct()
 	{
@@ -35,7 +32,6 @@ class Statement extends PDOStatement
 	/**
 	 * Set instance
 	 * 
-	 * @access public
 	 * @param object $sqlInstance Sql-Instance
 	 */
 	public function setInstance($sqlInstance)
@@ -46,7 +42,6 @@ class Statement extends PDOStatement
 	/**
 	 * Set query
 	 * 
-	 * @access public
 	 * @param String $query Query
 	 */
 	public function setQuery($query)
@@ -57,7 +52,6 @@ class Statement extends PDOStatement
 	/**
 	* Returns number of executed rows
 	*
-	* @access public
 	* @return int Number of executed rows
 	*/	
 	public function rows()
@@ -68,7 +62,6 @@ class Statement extends PDOStatement
 	/**
 	 * Execute Query
 	 * 
-	 * @access public
 	 * @param array $input_parameters Data
 	 * @throws SqlException
 	 */
@@ -97,8 +90,6 @@ class Statement extends PDOStatement
 	
 	/**
 	 * Flush & close statement
-	 * 
-	 * @access public
 	 */
 	public function close()
 	{
